@@ -4,7 +4,8 @@
   "description": "CARE Case Management",
   "main": "index.js",
   "scripts": {
-    "test": "mocha **/AP*/tests/**/*.test.js"
+    "test": "mocha **/AP*/tests/**/*.test.js",
+    "coverage": "istanbul cover -x '**/dependencies/**' _mocha -- -R dot --recursive '**/AP*/tests/**/*.test.js'"
   },
   "keywords": [],
   "author": "Duncan Abraham",
