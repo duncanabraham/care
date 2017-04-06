@@ -5,5 +5,5 @@ care.controller('MenuController', ['$scope', 'configService', function ($scope, 
     let newPage = 'views/member/' + page + '.html';
     configService.setKey('currentPage', newPage);
     configService.setPath(page);
-  }
+  };
 }]);

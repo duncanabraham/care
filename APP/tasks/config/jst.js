@@ -9,9 +9,8 @@
  *   http://sailsjs.com/anatomy/tasks/config/jst-js
  *
  */
-
-module.exports = function(grunt) {
-
+'use strict';
+module.exports = function (grunt) {
   grunt.config.set('jst', {
     dev: {
 
@@ -25,7 +24,6 @@ module.exports = function(grunt) {
       // Note that the interpolate setting above is simply an example of overwriting lodash's
       // default interpolation. If you want to parse templates with the default _.template behavior
       // (i.e. using <div><%= this.id %></div>), there's no need to overwrite `templateSettings.interpolate`.
-
 
       files: {
         // e.g.
@@ -58,5 +56,4 @@ module.exports = function(grunt) {
   // grunt.loadNpmTasks('grunt-contrib-jst');
   // ```
   // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-
 };

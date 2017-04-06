@@ -13,7 +13,7 @@
  * For more background information on views and partials in Sails, check out:
  * http://sailsjs.com/docs/concepts/views
  */
-
+'use strict';
 module.exports.views = {
 
   /***************************************************************************

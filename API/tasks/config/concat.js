@@ -10,8 +10,8 @@
  *   http://sailsjs.com/anatomy/tasks/config/concat-js
  *
  */
-module.exports = function(grunt) {
-
+'use strict';
+module.exports = function (grunt) {
   grunt.config.set('concat', {
     js: {
       src: require('../pipeline').jsFilesToInject,
@@ -46,5 +46,4 @@ module.exports = function(grunt) {
   // grunt.loadNpmTasks('grunt-contrib-concat');
   // ```
   // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-
 };

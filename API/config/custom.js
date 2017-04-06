@@ -7,7 +7,7 @@
  * For more information on custom configuration, visit:
  * http://sailsjs.com/config/custom
 */
-
+'use strict';
 module.exports.custom = {
 
   /**************************************************************************

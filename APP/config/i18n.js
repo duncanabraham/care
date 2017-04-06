@@ -11,7 +11,7 @@
  * For more info on i18n in Sails in general, check out:
  * http://sailsjs.com/docs/concepts/internationalization
  */
-
+'use strict';
 module.exports.i18n = {
 
   /***************************************************************************
@@ -20,7 +20,7 @@ module.exports.i18n = {
   *                                                                          *
   ***************************************************************************/
 
-  locales: ['en', 'es', 'fr', 'de'],
+  locales: ['en', 'es', 'fr', 'de']
 
   /****************************************************************************
   *                                                                           *

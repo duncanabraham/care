@@ -11,7 +11,8 @@
  *   http://sailsjs.com/anatomy/tasks/register/prod-js
  *
  */
-module.exports = function(grunt) {
+'use strict';
+module.exports = function (grunt) {
   grunt.registerTask('prod', [
     'compileAssets',
     'concat',
@@ -19,6 +20,6 @@ module.exports = function(grunt) {
     'cssmin',
     'sails-linker:prodJs',
     'sails-linker:prodStyles',
-    'sails-linker:clientSideTemplates',
+    'sails-linker:clientSideTemplates'
   ]);
 };

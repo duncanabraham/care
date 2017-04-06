@@ -1,5 +1,5 @@
 'use strict';
 
-describe('The CARE API', () => {
+describe('The CARE API', function () {
   it('should have tests!');
 });

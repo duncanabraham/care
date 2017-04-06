@@ -8,7 +8,7 @@
  * For more information on configuration, check out:
  * http://sailsjs.com/config/http
  */
-
+'use strict';
 module.exports.http = {
 
   /****************************************************************************
@@ -40,7 +40,6 @@ module.exports.http = {
     //   'favicon',
     // ],
 
-
     /***************************************************************************
     *                                                                          *
     * The body parser that will handle incoming multipart HTTP requests.       *
@@ -55,6 +54,6 @@ module.exports.http = {
     //   return middlewareFn;
     // })(),
 
-  },
+  }
 
 };
