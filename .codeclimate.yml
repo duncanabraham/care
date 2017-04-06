@@ -1,0 +1,19 @@
+engines:
+  duplication:
+    enabled: true
+    config:
+      languages:
+      - javascript:
+          mass_threshold: 200
+  eslint:
+    enabled: true
+  fixme:
+    enabled: false
+  radon:
+    enabled: true
+ratings:
+  paths:
+    - "**.js"
+exclude_paths:
+  - "**/tests/"
+  - "**/testdata/"
