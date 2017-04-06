@@ -7,7 +7,8 @@
  *   http://sailsjs.com/anatomy/tasks/register/compile-assets-js
  *
  */
-module.exports = function(grunt) {
+'use strict';
+module.exports = function (grunt) {
   grunt.registerTask('compileAssets', [
     'clean:dev',
     'jst:dev',

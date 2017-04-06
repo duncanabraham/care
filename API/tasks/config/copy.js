@@ -11,8 +11,8 @@
  *   http://sailsjs.com/anatomy/tasks/config/copy-js
  *
  */
-module.exports = function(grunt) {
-
+'use strict';
+module.exports = function (grunt) {
   grunt.config.set('copy', {
     dev: {
       files: [{
@@ -55,5 +55,4 @@ module.exports = function(grunt) {
   // grunt.loadNpmTasks('grunt-contrib-copy');
   // ```
   // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-
 };

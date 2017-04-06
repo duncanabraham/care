@@ -12,7 +12,7 @@
  * For additional options and more information, see:
  * http://sailsjs.com/config/security
  */
-
+'use strict';
 module.exports.security = {
 
    /***************************************************************************
@@ -33,7 +33,6 @@ module.exports.security = {
   //   allowOrigins: '*',
   //   allowCredentials: false,
   // },
-
 
   /****************************************************************************
   *                                                                           *

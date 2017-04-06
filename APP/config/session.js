@@ -8,7 +8,7 @@
  * For all available options, see:
  * http://sailsjs.com/config/session
  */
-
+'use strict';
 module.exports.session = {
 
   /***************************************************************************
@@ -18,8 +18,7 @@ module.exports.session = {
   * of your users, forcing them to log in again.                             *
   *                                                                          *
   ***************************************************************************/
-  secret: 'dcc2fdeb5ff014ec96948b0a1641f615',
-
+  secret: 'dcc2fdeb5ff014ec96948b0a1641f615'
 
   /***************************************************************************
   *                                                                          *

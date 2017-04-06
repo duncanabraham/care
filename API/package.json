@@ -30,6 +30,15 @@
     "type": "git",
     "url": "git://github.com/duncan/api.git"
   },
+  "standard": {
+    "ignore": [
+      "**/out/",
+      "/lib/select2/",
+      "/lib/ckeditor/",
+      "tmp.js"
+    ],
+    "globals": [ "care", "sails", "PwHistory", "User" , "async", "describe"]
+  },
   "author": "duncan",
   "license": ""
 }

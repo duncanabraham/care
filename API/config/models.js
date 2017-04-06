@@ -13,6 +13,7 @@
  * http://sailsjs.com/docs/concepts/models-and-orm/model-settings
  */
 
+'use strict';
 module.exports.models = {
   /***************************************************************************
   *                                                                          *
@@ -31,7 +32,6 @@ module.exports.models = {
 
   migrate: 'alter',
 
-
   /***************************************************************************
   *                                                                          *
   * Base attributes that are included in all of your models by default.      *
@@ -44,14 +44,14 @@ module.exports.models = {
   *                                                                          *
   ***************************************************************************/
   attributes: {
-    id: { type: 'number', autoIncrement: true, }
-    //--------------------------------------------------------------------------
+    id: { type: 'number', autoIncrement: true }
+    // --------------------------------------------------------------------------
     //  /\   Using MongoDB?
     //  ||   Replace `id` above with this instead:
     //
     // ```
     // id: { type: 'string', columnName: '_id' },
     // ```
-    //--------------------------------------------------------------------------    
+    // --------------------------------------------------------------------------
   }
 };

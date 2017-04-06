@@ -3,7 +3,7 @@ care.controller('LoginController', ['$scope', 'apiService', 'configService', fun
   $scope.user = {
     username: '',
     password: ''
-  }
+  };
   $scope.login = () => {
     if ($scope.user.username && $scope.user.password) {
       apiService.post('session/login', $scope.user)
@@ -13,10 +13,10 @@ care.controller('LoginController', ['$scope', 'apiService', 'configService', fun
         })
         .catch((err) => {
           console.log('error: ', err);
-          configService.setKey('currentUser', null)
+          configService.setKey('currentUser', null);
         });
     } else {
-      $scope.message='Please check your credentials and try again';
+      $scope.message = 'Please check your credentials and try again';
     }
   };
-}])
+}]);

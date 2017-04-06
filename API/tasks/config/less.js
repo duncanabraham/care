@@ -9,8 +9,8 @@
  *   http://sailsjs.com/anatomy/tasks/config/less-js
  *
  */
-module.exports = function(grunt) {
-
+'use strict';
+module.exports = function (grunt) {
   grunt.config.set('less', {
     dev: {
       files: [{
@@ -46,5 +46,4 @@ module.exports = function(grunt) {
   // grunt.loadNpmTasks('grunt-contrib-less');
   // ```
   // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-
 };

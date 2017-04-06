@@ -9,8 +9,8 @@
  *   http://sailsjs.com/anatomy/tasks/config/uglify-js
  *
  */
-module.exports = function(grunt) {
-
+'use strict';
+module.exports = function (grunt) {
   grunt.config.set('uglify', {
     dist: {
       src: ['.tmp/public/concat/production.js'],
@@ -41,5 +41,4 @@ module.exports = function(grunt) {
   // grunt.loadNpmTasks('grunt-contrib-uglify');
   // ```
   // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-
 };

@@ -7,7 +7,8 @@
  *   http://sailsjs.com/anatomy/tasks/register/sync-assets-js
  *
  */
-module.exports = function(grunt) {
+'use strict';
+module.exports = function (grunt) {
   grunt.registerTask('syncAssets', [
     'jst:dev',
     'less:dev',

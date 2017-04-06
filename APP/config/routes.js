@@ -7,9 +7,8 @@
  * For more information on configuring custom routes, check out:
  * http://sailsjs.com/anatomy/config/routes-js
  */
-
+'use strict';
 module.exports.routes = {
-
 
   /***************************************************************************
   *                                                                          *
@@ -22,9 +21,7 @@ module.exports.routes = {
 
   '/': {
     view: 'homepage'
-  },
-
-
+  }
 
   /***************************************************************************
   *                                                                          *

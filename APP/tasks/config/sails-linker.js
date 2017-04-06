@@ -11,10 +11,9 @@
  *   http://sailsjs.com/anatomy/tasks/config/sails-linker-js
  *
  */
-module.exports = function(grunt) {
-
+'use strict';
+module.exports = function (grunt) {
   grunt.config.set('sails-linker', {
-
 
     //   ╦╔═╗╦  ╦╔═╗╔═╗╔═╗╦═╗╦╔═╗╔╦╗
     //   ║╠═╣╚╗╔╝╠═╣╚═╗║  ╠╦╝║╠═╝ ║
@@ -45,7 +44,7 @@ module.exports = function(grunt) {
         relative: true
       },
       files: {
-        '.tmp/public/**/*.html': require('../pipeline').jsFilesToInject,
+        '.tmp/public/**/*.html': require('../pipeline').jsFilesToInject
       }
     },
 
@@ -72,10 +71,9 @@ module.exports = function(grunt) {
         relative: true
       },
       files: {
-        '.tmp/public/**/*.html': ['.tmp/public/min/production.min.js'],
+        '.tmp/public/**/*.html': ['.tmp/public/min/production.min.js']
       }
     },
-
 
     //  ╔═╗╔╦╗╦ ╦╦  ╔═╗╔═╗╦ ╦╔═╗╔═╗╔╦╗╔═╗
     //  ╚═╗ ║ ╚╦╝║  ║╣ ╚═╗╠═╣║╣ ║╣  ║ ╚═╗
@@ -108,7 +106,7 @@ module.exports = function(grunt) {
       },
 
       files: {
-        '.tmp/public/**/*.html': require('../pipeline').cssFilesToInject,
+        '.tmp/public/**/*.html': require('../pipeline').cssFilesToInject
       }
     },
 
@@ -135,10 +133,9 @@ module.exports = function(grunt) {
         relative: true
       },
       files: {
-        '.tmp/public/index.html': ['.tmp/public/min/production.min.css'],
+        '.tmp/public/index.html': ['.tmp/public/min/production.min.css']
       }
     },
-
 
     //  ╔═╗╦═╗╔═╗╔═╗╔═╗╔╦╗╔═╗╦╦  ╔═╗╔╦╗  ╦ ╦╔╦╗╔╦╗╦    ╔╦╗╔═╗╔╦╗╔═╗╦  ╔═╗╔╦╗╔═╗╔═╗
     //  ╠═╝╠╦╝║╣ ║  ║ ║║║║╠═╝║║  ║╣  ║║  ╠═╣ ║ ║║║║     ║ ║╣ ║║║╠═╝║  ╠═╣ ║ ║╣ ╚═╗
@@ -168,11 +165,11 @@ module.exports = function(grunt) {
         relative: true
       },
       files: {
-        '.tmp/public/index.html': ['.tmp/public/jst.js'],
+        '.tmp/public/index.html': ['.tmp/public/jst.js']
       }
-    },
+    }
 
-  });//</ grunt.config.set() >
+  });// </ grunt.config.set() >
 
   // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
   // This Grunt plugin is part of the default asset pipeline in Sails,
@@ -197,5 +194,4 @@ module.exports = function(grunt) {
   // grunt.loadNpmTasks('grunt-sails-linker');
   // ```
   // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-
 };

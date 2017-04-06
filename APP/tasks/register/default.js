@@ -12,14 +12,11 @@
  *   http://sailsjs.com/anatomy/tasks/register/default-js
  *
  */
+'use strict';
 module.exports = function (grunt) {
-
-
   grunt.registerTask('default', [
     'compileAssets',
     'linkAssets',
     'watch'
   ]);
-
-
 };

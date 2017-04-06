@@ -13,6 +13,7 @@
  * http://sailsjs.com/config/security
  */
 
+'use strict';
 module.exports.security = {
 
   /***************************************************************************
@@ -33,8 +34,7 @@ module.exports.security = {
     allowOrigins: '*',
     allowRequestMethods: 'GET, POST, PUT, DELETE, OPTIONS, HEAD, PATCH'
     //   allowCredentials: false,
-  },
-
+  }
 
   /****************************************************************************
   *                                                                           *

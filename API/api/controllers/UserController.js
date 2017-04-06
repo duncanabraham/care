@@ -5,8 +5,6 @@
  * @help        :: See http://sailsjs.com/docs/concepts/actions
  */
 
+'use strict';
 module.exports = {
-  
-
 };
-

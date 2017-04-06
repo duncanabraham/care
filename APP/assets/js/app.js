@@ -1,11 +1,11 @@
 /**
- *     ██████╗ █████╗ ██████╗ ███████╗ 
- *    ██╔════╝██╔══██╗██╔══██╗██╔════╝ 
- *    ██║     ███████║██████╔╝█████╗   
- *    ██║     ██╔══██║██╔══██╗██╔══╝   
- *    ╚██████╗██║  ██║██║  ██║███████╗ 
- *     ╚═════╝╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝ 
- *      CARE CASE MANAGEMENT SYSTEM    
+ *     ██████╗ █████╗ ██████╗ ███████╗
+ *    ██╔════╝██╔══██╗██╔══██╗██╔════╝
+ *    ██║     ███████║██████╔╝█████╗
+ *    ██║     ██╔══██║██╔══██╗██╔══╝
+ *    ╚██████╗██║  ██║██║  ██║███████╗
+ *     ╚═════╝╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝
+ *      CARE CASE MANAGEMENT SYSTEM
  */
 'use strict';
 
@@ -22,20 +22,20 @@ care.config([
       .when('/login', {
         templateUrl: viewBase + 'public/login.html',
         controller: 'LoginController',
-        title: 'Login',
+        title: 'Login'
       })
       .when('/home', {
         templateUrl: viewBase + 'templates/pageTemplate.html',
         controller: 'HomeController',
-        pageLink: viewBase + 'member/home.html',        
-        title: 'Home',
+        pageLink: viewBase + 'member/home.html',
+        title: 'Home'
       })
       .when('/admin', {
         templateUrl: viewBase + 'templates/pageTemplate.html',
         controller: 'AdminController',
-        pageLink: viewBase + 'member/admin.html',        
-        title: 'Admin',
-      })
+        pageLink: viewBase + 'member/admin.html',
+        title: 'Admin'
+      });
   }
 ]);
 
