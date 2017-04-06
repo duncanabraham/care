@@ -1,12 +1,17 @@
-# app
+# CARE
 
-a [Sails](http://sailsjs.com) application
+## Case Management System
 
+```
+    ██████╗ █████╗ ██████╗ ███████╗ 
+   ██╔════╝██╔══██╗██╔══██╗██╔════╝ 
+   ██║     ███████║██████╔╝█████╗   
+   ██║     ██╔══██║██╔══██╗██╔══╝   
+   ╚██████╗██║  ██║██║  ██║███████╗ 
+    ╚═════╝╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝ 
+  
+     CARE CASE MANAGEMENT SYSTEM    
+  ----------------------------------
+```
 
-### Links
-
-+ [Sails framework documentation](http://sailsjs.com/documentation)
-+ [Version notes / upgrading](http://sailsjs.com/documentation/upgrading/to-v-1-0)
-+ [Deployment tips](http://sailsjs.com/documentation/concepts/deployment)
-+ [Community support options](http://sailsjs.com/support)
-+ [Sails Flagship](https://flagship.sailsjs.com)
+This is the REST Application for the CARE Project ...
