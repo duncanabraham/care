@@ -107,7 +107,7 @@ body {
 }
 
 ul {
-  margin: 10px 0px;
+  margin: 0px;
   padding: 0;
   list-style: none;
 }
@@ -125,17 +125,36 @@ ul {
   background-color: lightskyblue;
 }
 
-.adminmenu .nohighlight{
-  line-height: 5px;  
+.adminmenu .nohighlight {
+  border-bottom: 1px solid #ccc;
 }
 
-.adminmenu .nohighlight:hover {
-  background-color: #fff;  
+.adminmenu li.nohighlight:hover {
+  background-color: #fff;
+}
+
+.adminmenu li.heading {
+  background-color: #eee!important;
+  padding: 5px;
+}
+
+.adminmenu li.heading:hover {
+  background-color: #eee!important;
 }
 
 .admincontent {
   vertical-align: top;
   padding: 10px;
+}
+
+div.admincontent {
+  padding: 0;
+  margin-top: 1.5em;
+}
+
+div.admincontent ul {
+  list-style: disc;
+  margin-left: 20px;
 }
 
 .admincontent h2 {
