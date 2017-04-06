@@ -10,8 +10,8 @@
  *   http://sailsjs.com/anatomy/tasks/config/coffee-js
  *
  */
-module.exports = function(grunt) {
-
+'use strict';
+module.exports = function (grunt) {
   grunt.config.set('coffee', {
     dev: {
       options: {
@@ -52,5 +52,4 @@ module.exports = function(grunt) {
   // grunt.loadNpmTasks('grunt-contrib-coffee');
   // ```
   // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-
 };

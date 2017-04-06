@@ -24,6 +24,9 @@
   "env": {
     "node": true
   },
+  "parserOptions": {
+        "ecmaVersion": 6
+  },
 
   "globals": {
     // If "no-undef" is enabled below and your app uses globals, be sure to list all
@@ -37,6 +40,8 @@
   },
 
   "rules": {
+    "no-unused-expressions": 0,
+    "space-before-function-paren": 0,
     "callback-return":              [2, ["callback", "cb", "next", "done", "proceed"]],
     "camelcase":                    [1, {"properties": "always"}],
     "comma-style":                  [2, "last"],

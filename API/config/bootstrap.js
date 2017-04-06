@@ -9,11 +9,10 @@
  * http://sailsjs.com/config/bootstrap
  */
 
+'use strict';
 module.exports.bootstrap = function (cb) {
-
   // It's very important to trigger this callback method when you are finished
   // with the bootstrap!  (otherwise your server will never lift, since it's waiting on the bootstrap)
-
   sails.log.debug('  ██████╗ █████╗ ██████╗ ███████╗ ');
   sails.log.debug(' ██╔════╝██╔══██╗██╔══██╗██╔════╝ ');
   sails.log.debug(' ██║     ███████║██████╔╝█████╗   ');
@@ -24,7 +23,6 @@ module.exports.bootstrap = function (cb) {
   sails.log.debug('   CARE CASE MANAGEMENT SYSTEM    ');
   sails.log.debug('----------------------------------');
   sails.log.debug('');
-  sails.log.debug('STARTING CARE SERVER API ...');  
+  sails.log.debug('STARTING CARE SERVER API ...');
   return cb();
-
 };

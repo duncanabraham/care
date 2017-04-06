@@ -9,7 +9,7 @@ care.factory('configService', ['$location', function ($location) {
       config[k] = v;
     },
     getKey: function (k) {
-      return config[k]
+      return config[k];
     },
     setPath: function (path) {
       $location.path(path);
@@ -20,5 +20,5 @@ care.factory('configService', ['$location', function ($location) {
         this.setPath('/login');
       }
     }
-  }
+  };
 }]);

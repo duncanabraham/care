@@ -14,8 +14,8 @@
  * http://sailsjs.com/docs/concepts/views
  */
 
+'use strict';
 module.exports.views = {
-
   /***************************************************************************
   *                                                                          *
   * Extension to use for your views. When calling `res.view()` in an action, *
@@ -35,7 +35,5 @@ module.exports.views = {
   * Note that layouts only work with the built-in view engine!               *
   *                                                                          *
   ***************************************************************************/
-
   // layout: 'layout'
-
 };

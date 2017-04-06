@@ -13,7 +13,7 @@
  * http://sailsjs.com/docs/concepts/policies
  */
 
-
+'use strict';
 module.exports.policies = {
 
   /***************************************************************************

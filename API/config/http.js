@@ -8,10 +8,8 @@
  * For more information on configuration, check out:
  * http://sailsjs.com/config/http
  */
-
+'use strict';
 module.exports.http = {
-
-
 
   /****************************************************************************
   *                                                                           *
@@ -31,13 +29,13 @@ module.exports.http = {
     *                                                                          *
     ***************************************************************************/
 
-    allowOrigin: (req, res, next) => {
+    allowOrigin: function (req, res, next) {
       res.set('Access-Control-Allow-Origin', '*');
       res.set('Access-Control-Allow-Headers', 'X-Requested-With');
       next();
     },
 
-    xframe: require('lusca').xframe('SAMEORIGIN'), //SAMEORIGIN
+    xframe: require('lusca').xframe('SAMEORIGIN'), // SAMEORIGIN
     poweredBy: require('helmet').hidePoweredBy(),
     noCache: require('helmet').noCache(),
     xssFilter: require('helmet').xssFilter({ setOnOldIE: true }),
@@ -73,7 +71,6 @@ module.exports.http = {
     //   'favicon',
     // ],
 
-
     /***************************************************************************
     *                                                                          *
     * The body parser that will handle incoming multipart HTTP requests.       *
@@ -88,6 +85,6 @@ module.exports.http = {
     //   return middlewareFn;
     // })(),
 
-  },
+  }
 
 };

@@ -4,6 +4,7 @@
  * @description :: Server-side actions for handling incoming requests.
  * @help        :: See http://sailsjs.com/docs/concepts/actions
  */
+'use strict';
 
 const bcrypt = require('bcrypt');
 
@@ -27,12 +28,13 @@ class Session {
         if (err) {
           reject('Invalid username');
         } else {
+          let thisUser = user;
           if (user && user.rows) {
-            user = user.rows[0];
+            thisUser = user.rows[0];
           } else {
-            user = { password: '' };
+            thisUser = { password: '' };
           }
-          resolve(user);
+          resolve(thisUser);
         }
       });
     });
@@ -67,12 +69,11 @@ class Session {
               dbUser.authenticated = true;
               req.session.User = _.assign({}, dbUser);
               thisSession.makeGUID()
-              .then((guid)=>{
-                dbUser.guid = guid;
-                req.session.guid = guid;
-                res.status(200).send(dbUser);
-              });
-              
+                .then((guid) => {
+                  dbUser.guid = guid;
+                  req.session.guid = guid;
+                  res.status(200).send(dbUser);
+                });
             } else {
               res.status(403).send('Forbidden');
             }
@@ -102,5 +103,4 @@ module.exports = {
   login: thisSession.login,
   logout: thisSession.logout,
   ping: thisSession.ping
-}
-
+};

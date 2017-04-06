@@ -9,7 +9,7 @@
  * For more information on the Sails logger, check out:
  * http://sailsjs.com/docs/concepts/logging
  */
-
+'use strict';
 module.exports.log = {
 
   /***************************************************************************

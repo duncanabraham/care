@@ -10,8 +10,8 @@
  * http://sailsjs.com/docs/concepts/logging
  */
 
+'use strict';
 module.exports.log = {
-
   /***************************************************************************
   *                                                                          *
   * Valid `level` configs: i.e. the minimum log level to capture with        *
@@ -23,7 +23,5 @@ module.exports.log = {
   * You may also set the level to "silent" to suppress all logs.             *
   *                                                                          *
   ***************************************************************************/
-
   // level: 'info'
-
 };

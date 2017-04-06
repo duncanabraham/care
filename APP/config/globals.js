@@ -8,7 +8,7 @@
  * For more information on any of these options, check out:
  * http://sailsjs.com/config/globals
  */
-
+'use strict';
 module.exports.globals = {
 
   /****************************************************************************
@@ -47,6 +47,6 @@ module.exports.globals = {
   *                                                                           *
   ****************************************************************************/
 
-  sails: true,
+  sails: true
 
 };

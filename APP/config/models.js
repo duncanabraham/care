@@ -12,9 +12,8 @@
  * them on a project-wide or per-model basis, see:
  * http://sailsjs.com/docs/concepts/models-and-orm/model-settings
  */
-
+'use strict';
 module.exports.models = {
-
 
   /***************************************************************************
   *                                                                          *
@@ -33,7 +32,6 @@ module.exports.models = {
 
   // migrate: 'alter',
 
-
   /***************************************************************************
   *                                                                          *
   * Base attributes that are included in all of your models by default.      *
@@ -46,18 +44,17 @@ module.exports.models = {
   *                                                                          *
   ***************************************************************************/
   attributes: {
-    createdAt: { type: 'number', autoCreatedAt: true, },
-    updatedAt: { type: 'number', autoUpdatedAt: true, },
-    id: { type: 'number', autoIncrement: true, },
-    //--------------------------------------------------------------------------
+    createdAt: { type: 'number', autoCreatedAt: true },
+    updatedAt: { type: 'number', autoUpdatedAt: true },
+    id: { type: 'number', autoIncrement: true }
+    // --------------------------------------------------------------------------
     //  /\   Using MongoDB?
     //  ||   Replace `id` above with this instead:
     //
     // ```
     // id: { type: 'string', columnName: '_id' },
     // ```
-    //--------------------------------------------------------------------------
-  },
-
+    // --------------------------------------------------------------------------
+  }
 
 };
