@@ -19,3 +19,4 @@ exclude_paths:
   - "**/testdata/"
   - "**/dependencies/"
   - "**/tasks/"
+  - "**/bower_components/"
