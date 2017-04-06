@@ -4,24 +4,27 @@
     <tr>
       <td width="200">
         <ul class="adminmenu">
+          <li class="heading nohighlight">Settings:</li>
           <li><a ng-click="adminClick('Users')">Users</a></li>
           <li><a ng-click="adminClick('Teams')">Teams</a></li>
           <li><a ng-click="adminClick('Groups')">Groups</a></li>
           <li><a ng-click="adminClick('Documents')">Documents</a></li>
-          <li><a ng-click="adminClick('Settings')">Settings</a></li>
-          <li><a ng-click="adminClick('Options')">Options</a></li>
-          <li class="nohighlight">
-            <hr/>
-          </li>
-          <li><a ng-click="adminClick('Cases')">Cases</a></li>
-          <li><a ng-click="adminClick('Calls')">Calls</a></li>
-          <li><a ng-click="adminClick('Alerts')">Alerts</a></li>
-          <li><a ng-click="adminClick('Notifications')">Notifications</a></li>
-          <li class="nohighlight">
-            <hr/>
-          </li>
+          <li><a ng-click="adminClick('Forms')">Forms</a></li>
           <li><a ng-click="adminClick('FieldTypes')">Field Types</a></li>
           <li><a ng-click="adminClick('Fields')">Fields</a></li>
+          <li><a ng-click="adminClick('Settings')">Settings</a></li>
+          <li><a ng-click="adminClick('Options')">Options</a></li>
+          <li class="nohighlight"></li>
+          <li class="heading nohighlight">Documents:</li>
+          <li><a>Cases</a></li>
+          <li><a>Calls</a></li>
+          <li><a>Alerts</a></li>
+          <li><a>Notifications</a></li>
+          <li class="nohighlight"></li>
+          <li class="heading nohighlight">Forms:</li>
+          <li><a>Caller Contact Details</a></li>
+          <li><a>Issue Type</a></li>
+          <li><a>Authorisation</a></li>
         </ul>
       </td>
       <td class="admincontent" ng-include="adminPartial"></td>
