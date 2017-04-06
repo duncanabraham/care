@@ -1,0 +1,27 @@
+<div class="outerbox">
+  <h1>CARE</h1>
+  <p>Case Management System</p>
+  <div class="loginbox">
+    <form>
+      <h1 class="bg-primary text-white">Login</h1>
+      <div class="row">
+        <input type="text" class="form-control" ng-model="user.username" autocomplete="off" autocorrect="off" autocapitalize="off"
+          spellcheck="false" placeholder="username" />
+      </div>
+      <div class="row">
+        <input type="password" class="form-control" ng-model="user.password" autocomplete="off" autocorrect="off" autocapitalize="off"
+          spellcheck="false" placeholder="password" />
+      </div>
+      <div>
+        <p ng-bind="message"></p>
+      </div>
+      <hr class="thinline" />
+      <div class="row">
+        <button type="submit" class="btn btn-primary pull-right" ng-click="login()">Login</button>
+      </div>
+    </form>
+  </div>
+  <div class="row footer">
+    Unauthorised access is strictly prohibited
+  </div>
+</div>

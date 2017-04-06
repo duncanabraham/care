@@ -1,0 +1,6 @@
+{
+  "security":{
+    "passwordHistoryCount": 2,
+    "passwordMinLength": 6
+  }
+}

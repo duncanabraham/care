@@ -1,0 +1,35 @@
+{
+  "name": "app",
+  "private": true,
+  "version": "0.0.0",
+  "description": "a Sails application",
+  "keywords": [],
+  "dependencies": {
+    "async": "2.0.1",
+    "connect-redis": "^3.2.0",
+    "grunt": "1.0.1",
+    "lodash": "3.10.1",
+    "sails": "^1.0.0-32",
+    "sails-hook-grunt": "^1.0.4",
+    "sails-hook-orm": "^2.0.0-0",
+    "sails-hook-sockets": "^1.0.1",
+    "uglify-js": "^2.8.21"
+  },
+  "devDependencies": {
+    "eslint": "3.5.0"
+  },
+  "scripts": {
+    "start": "NODE_ENV=production node app.js",
+    "test": "npm run lint && npm run custom-tests && echo 'Done.'",
+    "lint": "node ./node_modules/eslint/bin/eslint . --max-warnings=0 && echo '✔  Your code looks good.'",
+    "custom-tests": "echo \"(No other custom tests yet.)\" && echo",
+    "debug": "node debug app.js"
+  },
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/duncan/app.git"
+  },
+  "author": "duncan",
+  "license": ""
+}
