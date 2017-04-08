@@ -1,4 +1,240 @@
 <h2>Field Types</h2>
+<div ng-bind="fieldTypes"></div>
 <div class="admincontent">
-  <p>This is the /views/admin/fieldtypes.html page</p>
+  <div class="row">
+    <div class="col-xs-8">
+      <label>Text Box</label>
+      <input type="text" class="form-control" />
+    </div>
+    <div class="col-xs-4">
+      <p>A general purpose text field</p>
+    </div>
+  </div>
+  <div class="row">
+    <hr/>
+  </div>
+  <div class="row">
+    <div class="col-xs-8">
+      <label>Text Area</label>
+      <textarea type="text" class="form-control"></textarea>
+    </div>
+    <div class="col-xs-4">
+      <p>A large text entry area into which paragraphs can be entered.</p>
+    </div>
+  </div>
+  <div class="row">
+    <hr/>
+  </div>
+  <div class="row">
+    <div class="col-xs-8">
+      <label>Date</label>
+      <input type="date" class="form-control" />
+    </div>
+    <div class="col-xs-4">
+      <p>A date field without a time</p>
+    </div>
+  </div>
+  <div class="row">
+    <hr/>
+  </div>
+  <div class="row">
+    <div class="col-xs-8">
+      <label>Time</label>
+      <input time-picker />
+    </div>
+    <div class="col-xs-4">
+      <p>A time picker field</p>
+    </div>
+  </div>
+  <div class="row">
+    <hr/>
+  </div>
+  <div class="row">
+    <div class="col-xs-8">
+      <div class="input-group col-sm-8">
+        <div class="form-control">
+          <label class="vertmiddle"><i class="fa fa-thumbs-o-up"></i> Checkbox</label>
+        </div>
+        <span class="input-group-addon">
+				  <input type="checkbox" />                             
+				</span>
+      </div>
+    </div>
+    <div class="col-xs-4">
+      <p>A tick box that can be on or off</p>
+    </div>
+  </div>
+  <div class="row">
+    <hr/>
+  </div>
+  <div class="row">
+    <div class="col-xs-8">
+      <div class="input-group col-sm-8">
+        <div class="form-control">
+          <label class="vertmiddle">Radio Button (Option 1)</label>
+        </div>
+        <span class="input-group-addon">
+				  <input type="radio" name="radiobutton"/>                    
+				</span>
+      </div>
+      <div class="input-group col-sm-8">
+        <div class="form-control">
+          <label class="vertmiddle">Radio Button (Option 2)</label>
+        </div>
+        <span class="input-group-addon">
+				  <input type="radio" name="radiobutton" />
+				</span>
+      </div>
+    </div>
+    <div class="col-xs-4">
+      <p>A radio button allows one item to be selected from a set of items</p>
+    </div>
+  </div>
+  <div class="row">
+    <hr/>
+  </div>
+  <div class="row">
+    <div class="col-xs-8">
+      <label>Dropdown</label>
+      <select class="form-control"><option>Option 1</option><option>Option 2</option><option>Option 3</option><option>Option 4</option></select>
+    </div>
+    <div class="col-xs-4">
+      <p>Select an item from a drop-down selection box</p>
+    </div>
+  </div>
+  <div class="row">
+    <hr/>
+  </div>
+  <div class="row">
+    <div class="col-xs-8">
+      <label>Multi Select</label>
+      <select class="form-control" multiple="multiple"><option>Option 1</option><option>Option 2</option><option>Option 3</option><option>Option 4</option></select>
+    </div>
+    <div class="col-xs-4">
+      <p>Select multiple items from a drop-down selection box by using shift + click or ctrl + click</p>
+    </div>
+  </div>
+  <div class="row">
+    <hr/>
+  </div>
+  <div class="row">
+    <div class="col-xs-8">
+      <h1>Large Heading</h1>
+    </div>
+    <div class="col-xs-4">
+      <p>A main heading for a form</p>
+    </div>
+  </div>
+  <div class="row">
+    <hr/>
+  </div>
+  <div class="row">
+    <div class="col-xs-8">
+      <h3>Medium Heading</h3>
+    </div>
+    <div class="col-xs-4">
+      <p>A medium heading for a form</p>
+    </div>
+  </div>
+  <div class="row">
+    <hr/>
+  </div>
+  <div class="row">
+    <div class="col-xs-8">
+      <h4>Small Heading</h4>
+    </div>
+    <div class="col-xs-4">
+      <p>A small heading for a form</p>
+    </div>
+  </div>
+  <div class="row">
+    <hr/>
+  </div>
+  <div class="row">
+    <div class="col-xs-8">
+      <p>Paragraph</p>
+    </div>
+    <div class="col-xs-4">
+      <p>Add a line of text or block of text to a form</p>
+    </div>
+  </div>
+  <div class="row">
+    <hr/>
+  </div>
+  <div class="row">
+    <div class="col-xs-8">
+      <label>Seperator</label>
+      <hr class="seperator" />
+    </div>
+    <div class="col-xs-4">
+      <p>A horizontal rule to seperate sections of a form</p>
+    </div>
+  </div>
+  <div class="row">
+    <hr/>
+  </div>
+  <div class="row">
+    <div class="col-xs-8">
+      <label>Blank Line</label>
+      <br />
+    </div>
+    <div class="col-xs-4">
+      <p>A blank line for page layout</p>
+    </div>
+  </div>
+  <div class="row">
+    <hr/>
+  </div>
+  <div class="row">
+    <div class="col-xs-8">      
+      <button class="btn btn-default">Button</button>
+      <button class="btn btn-success">Button</button>
+      <button class="btn btn-primary">Button</button>
+      <button class="btn btn-danger">Button</button>
+      <button class="btn btn-warning">Button</button>
+      <button class="btn btn-info">Button</button>
+    </div>
+    <div class="col-xs-4">
+      <p>Buttons can be any of 6 colours and 3 sizes</p>
+    </div>
+  </div>
+  <div class="row">
+    <hr/>
+  </div>
+  <div class="row">
+    <div class="col-xs-8 colsample">     
+      <label>Section</label><br/>
+      <label>1 Column - 100%</label>
+      <table border="1" width="100%">
+        <tr><td width="100%">100%</td></tr>
+      </table>
+      <br/>
+      <label>2 Column - 50% : 50%</label>
+      <table border="1" width="100%">
+        <tr><td width="50%">&nbsp;</td><td width="50%">&nbsp;</td></tr>
+      </table>
+      <br/>
+      <label>2 Column - 33% : 66%</label>
+      <table border="1" width="100%">
+        <tr><td width="33%">&nbsp;</td><td width="67%">&nbsp;</td></tr>
+      </table>
+      <br/>
+      <label>2 Column - 66% : 33%</label>
+      <table border="1" width="100%">
+        <tr><td width="67%">&nbsp;</td><td width="33%">&nbsp;</td></tr>
+      </table>
+      <br/>
+      <label>3 Column - 33% : 33% : 33%</label>
+      <table border="1" width="100%">
+        <tr><td width="33%">&nbsp;</td><td width="34%">&nbsp;</td><td width="33%">&nbsp;</td></tr>
+      </table>
+    </div>
+    <div class="col-xs-4">
+      <p>Column layouts for forms</p>
+    </div>
+  </div>
+  <div class="row">
+    <hr/>
+  </div>
+  
 </div>
