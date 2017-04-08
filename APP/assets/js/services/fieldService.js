@@ -1,29 +1,21 @@
 'use strict';
 
 const formFields = {
-  'tb': { name: 'Text Box', icon: '' },
-  'ta': { name: 'Text Area', icon: '' },
-  'da': { name: 'Date', icon: '' },
-  'ti': { name: 'Time', icon: '' },
-  'cb': { name: 'Checkbox', icon: '' },
-  'ra': { name: 'Radio Button', icon: '' },
-  'dd': { name: 'Dropdown', icon: '' },
-  'ms': { name: 'Multi Select', icon: '' },
-  'lh': { name: 'Large Heading', icon: '' },
-  'mh': { name: 'Medium Heading', icon: '' },
-  'sh': { name: 'Small Heading', icon: '' },
-  'pa': { name: 'Paragraph', icon: '' },
-  'se': { name: 'Seperator', icon: '' },
-  'bl': { name: 'Blank Line', icon: '' },
-  'bu': { name: 'Button', icon: '' }
-};
-
-const blockLayout = {
-  'c100': { name: '1 Column', icon: '' },
-  'c5050': { name: '2 Column - 50:50', icon: '' },
-  'c3366': { name: '2 Column - 33:66', icon: '' },
-  'c6633': { name: '2 Column - 66:33', icon: '' },
-  'c300': { name: '3 Column - 33:33:33', icon: '' },
+  'tb': { name: 'Text Box', icon: 'Tb' },
+  'ta': { name: 'Text Area', icon: 'Ta' },
+  'da': { name: 'Date', icon: 'Da' },
+  'ti': { name: 'Time', icon: 'Ti' },
+  'cb': { name: 'Checkbox', icon: 'Cb' },
+  'rb': { name: 'Radio Button', icon: 'Rb' },
+  'dd': { name: 'Dropdown', icon: 'Dd' },
+  'ms': { name: 'Multi Select', icon: 'Ms' },
+  'lh': { name: 'Large Heading', icon: 'H1' },
+  'mh': { name: 'Medium Heading', icon: 'H2' },
+  'sh': { name: 'Small Heading', icon: 'H3' },
+  'pa': { name: 'Paragraph', icon: 'Pa' },
+  'se': { name: 'Seperator', icon: 'Se' },
+  'bl': { name: 'Blank Line', icon: 'Bl' },
+  'bu': { name: 'Button', icon: 'Bu' }
 };
 
 const buttonSizes = {
@@ -83,49 +75,42 @@ class Field {
     }
     return result;
   }
-}
-
-class Block {
-  constructor(type, options) {
-    options = _.assign({
-      color: 'default',
-      order: 0,
-      id: 0
-    }, options);
-    this.type = type;
-    this.color = options.color;
-    this.id = options.id;
+  buttonHandler(type) {
+    console.log('type: ', type);
   }
-  save() {
-    let result = {
-      type: this.type,
-      color: this.color,
-      order: this.order,
-      id: this.id
-    };
-    if (!this.id) {
-      delete result.id;
+  listFromObj(objList) {
+    let result = [];
+    for (let obj in objList) {
+      result.push({ name: objList[obj].name, key: obj });
     }
     return result;
   }
-}
-
-const listFromObj = (objList) => {
-  let result = [];
-  for (let obj in objList) {
-    result.push({ name: objList[obj].name, key: obj });
+  buttonsFromObj(objList) {
+    let result = [];
+    for (let obj in objList) {
+      result.push({ name: objList[obj].name, icon: objList[obj].icon });
+    }
+    return result;
   }
-  return result;
-};
+  formFields() {
+    return this.listFromObj(formFields);
+  }
+  buttonSizes() {
+    return this.listFromObj(buttonSizes);
+  }
+  buttonColors() {
+    return this.listFromObj(buttonColors);
+  }
+  textColors() {
+    return this.listFromObj(textColors);
+  }
+  palette() {
+    return this.buttonsFromObj(formFields);
+  }
+}
 
 care.factory('fieldService', [function () {
   return {
-    formFields: listFromObj(formFields),
-    blockLayout: listFromObj(blockLayout),
-    buttonSizes: listFromObj(buttonSizes),
-    buttonColors: listFromObj(buttonColors),
-    textColors: listFromObj(textColors),
-    newField: (type, options) => { return new Field(type, options); },
-    newBlock: (type, options) => { return new Block(type, options); }
+    Field: Field
   };
 }]);

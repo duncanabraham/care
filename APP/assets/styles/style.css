@@ -213,10 +213,32 @@ userlist ul li a {
   border-bottom: 2px solid #ccc;
 }
 
-.admintable .colsample td{
+.admintable .colsample td {
   border: 2px dotted #ccc!important;
 }
 
-.admintable label{
+.admintable label {
   font-weight: bold;
+}
+
+.paletteholder {
+  width: 101px;
+}
+
+.btn-square {
+  width: 50px;
+  height: 50px;
+  border: 3px outset #ccc;
+}
+
+.formlist {
+  width: 200px;
+}
+
+.visualblock {
+  border: 2px dashed #ccc;
+}
+
+.formholder {
+  padding: 50px;
 }

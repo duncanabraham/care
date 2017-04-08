@@ -1,14 +1,15 @@
 'use strict';
 
-class Form {
+class FormService {
   constructor(options) {
-    this.order = options.order || 0;
+    this.order = options && options.order ? options.order : 0;
     this.fields = [];
+    this.name = options.name ? options.name : 'New Form';
   }
 };
 
-care.factory('fieldService', [function () {
+care.factory('formService', [function () {
   return {
-    newForm: (options) => { return new Form(options); }
+    Form: FormService
   };
 }]);

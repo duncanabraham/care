@@ -9,7 +9,7 @@
  */
 'use strict';
 
-const care = angular.module('care', ['ngRoute', 'ngSanitize', 'pascalprecht.translate', 'wingify.timePicker']);
+const care = angular.module('care', ['ngRoute', 'ngSanitize', 'pascalprecht.translate']);
 
 care.config([
   '$routeProvider',
