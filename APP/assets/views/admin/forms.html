@@ -1,5 +1,34 @@
 <h2>Forms</h2>
 <div class="admincontent">
-  <p>This is the /views/admin/forms.html page</p>
-  <p>Forms are a collection of fields.  By grouping fields into forms commonly used groups of fields can be easily inserted into documents</p>
+  <p>Forms are a collection of fields. By grouping fields into forms commonly used groups of fields can be easily inserted into
+    documents.
+  </p>
+  <table border="1" width="100%">
+    <tr>
+      <td class="formlist">
+        <button class="btn btn-success form-control" ng-click="addForm()">Add Form</button>
+        <div ng-if="forms.length">
+          <button ng-repeat="item in forms" type="button" class="btn btn-default form-control" ng-click="loadForm(item)">
+            {{item.name}}
+          </button>
+        </div>
+      </td>
+      <td>
+        <div ng-if="currentForm" class="formholder">
+          <div class="visualblock">
+            <div ng-repeat="field in currentForm.fields">
+              <p>{{field|json}}</p>
+            </div>
+          </div>
+        </div>
+      </td>
+      <td class="paletteholder">
+        <div ng-if="palette.length">
+          <button ng-repeat="item in palette" type="button" class="btn btn-default btn-square" title="{{item.name}}" ng-click="itemClick(item.icon)">
+            {{item.icon}}
+          </button>
+        </div>
+      </td>
+    </tr>
+  </table>
 </div>
